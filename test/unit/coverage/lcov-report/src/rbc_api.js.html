@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/rbc_api.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> rbc_api.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { seedAddressData, seedBinCollnData } from './seed_test.js';</span>
+<span class="cstat-no" title="statement not covered" >import axios from 'axios';</span>
+<span class="cstat-no" title="statement not covered" >import { postcodeValidator } from './postcode_validator.js';</span>
+<span class="cstat-no" title="statement not covered" >import { PostcodeError, ErrEnum } from './bc_defines';</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >ModeEnum = Object.freeze({</span>
+  modeNone: 0,
+  modeMainServer: 1,
+  modeMockServer: 2
+})
+&nbsp;
+const defaultAddressesUrl = <span class="cstat-no" title="statement not covered" >'https://api.readingdev.com/rbc/getaddresses/';</span>
+const defaultCollectionsUrl = <span class="cstat-no" title="statement not covered" >'https://api.readingdev.com/api/collections/';</span>
+&nbsp;
+export class RBCConnInfo {
+  constructor (addressesUrl = defaultAddressesUrl,
+    collectionsUrl = defaultCollectionsUrl,
+    mode = ModeEnum.modeMainServer) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >    this.serviceMode = mode;</span>
+<span class="cstat-no" title="statement not covered" >    this.addressesUrl = addressesUrl;</span>
+<span class="cstat-no" title="statement not covered" >    this.collectionsUrl = collectionsUrl;</span>
+  }
+&nbsp;
+  checkMode (mode) {
+    // console.log(this.serviceMode === mode);
+<span class="cstat-no" title="statement not covered" >    return mode === this.serviceMode;</span>
+  }
+&nbsp;
+  getAddressesUrl (postcode) {
+    let url = <span class="cstat-no" title="statement not covered" >this.addressesUrl + postcode;</span>
+    // console.log(url);
+<span class="cstat-no" title="statement not covered" >    return url;</span>
+  }
+&nbsp;
+  getCollectionsUrl (uprn) {
+    let url = <span class="cstat-no" title="statement not covered" >this.collectionsUrl + uprn;</span>
+    // console.log(url);
+<span class="cstat-no" title="statement not covered" >    return url;</span>
+  }
+}
+&nbsp;
+var serviceMode = <span class="cstat-no" title="statement not covered" >ModeEnum.modeMockServer;</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >rbcApi = <span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >{</span></span></span></span></span></span>
+  state: {
+    addressData: seedAddressData,
+    binCollnData: seedBinCollnData,
+  },
+  getAddresses (conn, postcode) {
+<span class="cstat-no" title="statement not covered" >    return new Promise(<span class="fstat-no" title="function not covered" >(</span>resolve, reject) =&gt; {</span>
+      // postcode should be ukpostcode without space
+<span class="cstat-no" title="statement not covered" >      console.log(postcode);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (conn.checkMode(ModeEnum.modeMainServer)) {</span>
+        let url = <span class="cstat-no" title="statement not covered" >conn.getAddressesUrl(postcode);</span>
+<span class="cstat-no" title="statement not covered" >        axios.get(url).then(<span class="fstat-no" title="function not covered" >(</span>response) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          console.log(response);</span>
+          let data = <span class="cstat-no" title="statement not covered" >response.data;</span>
+<span class="cstat-no" title="statement not covered" >          if (data.Addresses) {</span>
+<span class="cstat-no" title="statement not covered" >            resolve({source: postcode, addresses: data.Addresses});</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            console.log("No address was found");</span>
+<span class="cstat-no" title="statement not covered" >            resolve({source: postcode, addresses: []});</span>
+          }
+        }).catch(<span class="fstat-no" title="function not covered" >(</span>err) =&gt; {
+<span class="cstat-no" title="statement not covered" >          console.log(err);</span>
+<span class="cstat-no" title="statement not covered" >          reject(new Error("Network error"));</span>
+        });
+      } else {
+        // console.log(seedAddressData);
+        let data = <span class="cstat-no" title="statement not covered" >seedAddressData.find(<span class="fstat-no" title="function not covered" >(</span>addressObj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          return addressObj.postcode === postcode;</span>
+        });
+<span class="cstat-no" title="statement not covered" >        if (data &amp;&amp; data.hasOwnProperty('Addresses')) {</span>
+<span class="cstat-no" title="statement not covered" >          console.log(data);</span>
+<span class="cstat-no" title="statement not covered" >          resolve({source: postcode, addresses: data.Addresses});</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          reject(new Error("Unknown error"));</span>
+        }
+      }
+    });
+  },
+  getPostcodeAddresses (conn, postcode, validator) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return new Promise(<span class="fstat-no" title="function not covered" >(</span>resolve, reject) =&gt; {</span>
+      let rectified = <span class="cstat-no" title="statement not covered" >validator.rectifyPostcode(postcode);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (rectified.errCode !== ErrEnum.errNone) {</span>
+<span class="cstat-no" title="statement not covered" >        reject(new PostcodeError("Validation Error", rectified.errCode));</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        this.uprn = null;</span>
+<span class="cstat-no" title="statement not covered" >        if (rectified.postcode !== '') {</span>
+<span class="cstat-no" title="statement not covered" >          rbcApi.getAddresses(conn, rectified.postcode).then(<span class="fstat-no" title="function not covered" >(</span>resp) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            resolve({source: postcode,</span>
+              rectifiedPostcode: resp.source,
+              addresses: resp.addresses});
+          }).catch(<span class="fstat-no" title="function not covered" >(</span>err) =&gt; {
+<span class="cstat-no" title="statement not covered" >            reject(err);</span>
+          });
+        }
+      }
+    });
+  },
+  findBinCollections (conn, uprn) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return new Promise(<span class="fstat-no" title="function not covered" >(</span>resolve, reject) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      console.log(uprn);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (conn.checkMode(ModeEnum.modeMainServer)) {</span>
+        let url = <span class="cstat-no" title="statement not covered" >conn.getCollectionsUrl(uprn);</span>
+<span class="cstat-no" title="statement not covered" >        axios.get(url).then(<span class="fstat-no" title="function not covered" >(</span>response) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          console.log(response);</span>
+          let data = <span class="cstat-no" title="statement not covered" >response.data;</span>
+<span class="cstat-no" title="statement not covered" >          if (data.success) {</span>
+<span class="cstat-no" title="statement not covered" >            resolve({source: uprn, collections: data.collections});</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            console.log("No collection was found");</span>
+<span class="cstat-no" title="statement not covered" >            resolve({source: uprn, collections: []});</span>
+          }
+        }).catch(<span class="fstat-no" title="function not covered" >(</span>err) =&gt; {
+<span class="cstat-no" title="statement not covered" >          console.log(err);</span>
+          // Blocked by CORS policy, No 'Allow-Control-Allow-Origin'
+<span class="cstat-no" title="statement not covered" >          console.log("No collection was found (Access denied)");</span>
+<span class="cstat-no" title="statement not covered" >          reject(new Error("No collection was found (Access denied)"));</span>
+        });
+      } else {
+        let data = <span class="cstat-no" title="statement not covered" >this.state.binCollnData.find(<span class="fstat-no" title="function not covered" >(</span>binCollnObj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          return binCollnObj.uprn === uprn;</span>
+        });
+<span class="cstat-no" title="statement not covered" >        console.log(data);</span>
+<span class="cstat-no" title="statement not covered" >        if (data &amp;&amp; data.hasOwnProperty('success') &amp;&amp; data.hasOwnProperty('collections')) {</span>
+<span class="cstat-no" title="statement not covered" >          if (data.success) {</span>
+<span class="cstat-no" title="statement not covered" >            resolve({source: uprn, collections: data.collections});</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            console.log("No collection was found");</span>
+<span class="cstat-no" title="statement not covered" >            reject(new Error("No collection was found"));</span>
+          }
+        } else {
+<span class="cstat-no" title="statement not covered" >          console.log("No collection was found");</span>
+<span class="cstat-no" title="statement not covered" >          reject(new Error("No collection was found"));</span>
+        }
+      }
+    });
+  },
+  getDateFromCouncilUKTimeStr (dateStr) {
+<span class="cstat-no" title="statement not covered" >    try {</span>
+      // Uk Time Format DDMMYYYY
+&nbsp;
+      let bases = <span class="cstat-no" title="statement not covered" >dateStr.split(" ");</span>
+      let parts = <span class="cstat-no" title="statement not covered" >bases[0].split('/');</span>
+      let month = <span class="cstat-no" title="statement not covered" >parts[1] - 1 // month is 0-based</span>
+      // console.log("Year: " + parts[2] + " Month: " + month, " Date: " + parts[0]);
+<span class="cstat-no" title="statement not covered" >      return new Date(parts[2], month, parts[0]);</span>
+    } catch (error) {
+<span class="cstat-no" title="statement not covered" >      console.log(error);</span>
+<span class="cstat-no" title="statement not covered" >      return null;</span>
+    }
+  },
+  getWeeklyBinCollectionSchedule (collections, fromDateTime, toDateTime) <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    if (collections === null) {</span>
+<span class="cstat-no" title="statement not covered" >      return [];</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    console.log(collections);</span>
+&nbsp;
+    let data = <span class="cstat-no" title="statement not covered" >collections.filter(<span class="fstat-no" title="function not covered" >(</span>collectionObj) =&gt; {</span>
+      // console.log(collectionObj.date);
+      // or use moment(collectionObj.date, "DD/MM/YYYY")
+      let d = <span class="cstat-no" title="statement not covered" >this.getDateFromCouncilUKTimeStr(collectionObj.date);</span>
+      // console.log(d);
+<span class="cstat-no" title="statement not covered" >      return d &amp;&amp; d &gt;= fromDateTime &amp;&amp; d &lt; toDateTime;</span>
+    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    console.log(data);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return data;</span>
+  }
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jun 06 2021 16:38:39 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

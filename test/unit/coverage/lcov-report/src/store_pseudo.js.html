@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/store_pseudo.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> store_pseudo.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// import { reactive } from 'vue';
+<span class="cstat-no" title="statement not covered" >import { seedAddressData, seedBinCollnData } from './seed_pseudo.js';</span>
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >store = <span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >{</span></span></span></span></span></span></span></span></span></span></span>
+  state: {
+    addressData: seedAddressData,
+    binCollnData: seedBinCollnData,
+  },
+  getPostAddresses (postcode) {
+    // https://api.readingdev.com/rbc/getaddresses/{uk-postcode}
+    // postcode should be ukpostcode without space
+<span class="cstat-no" title="statement not covered" >    console.log(postcode);</span>
+    // console.log(seedAddressData);
+    let filteredAddresses = <span class="cstat-no" title="statement not covered" >seedAddressData.filter(<span class="fstat-no" title="function not covered" >(</span>addressObj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      return addressObj.postcode === postcode;</span>
+    });
+<span class="cstat-no" title="statement not covered" >    if (filteredAddresses) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log(filteredAddresses);</span>
+<span class="cstat-no" title="statement not covered" >      return filteredAddresses;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return [];</span>
+  },
+  findBinCollections (uprn) {
+    // https://api.readingdev.com/api/collections/{uprn}
+<span class="cstat-no" title="statement not covered" >    console.log(uprn);</span>
+    let binCollnData = <span class="cstat-no" title="statement not covered" >this.state.binCollnData.find(<span class="fstat-no" title="function not covered" >(</span>binCollnObj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      return binCollnObj.uprn === uprn;</span>
+    });
+<span class="cstat-no" title="statement not covered" >    if (binCollnData) {</span>
+<span class="cstat-no" title="statement not covered" >      console.log(binCollnData);</span>
+<span class="cstat-no" title="statement not covered" >      return binCollnData;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return [];</span>
+  },
+  getWeeklyBinCollectionSchedule (uprn) {
+<span class="cstat-no" title="statement not covered" >    return this.state.binCollnData.map(<span class="fstat-no" title="function not covered" >(</span>binCollnObj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      return binCollnObj.date;</span>
+    });
+  },
+  setAddressData (postcode) {
+<span class="cstat-no" title="statement not covered" >    this.state.addressData.map(<span class="fstat-no" title="function not covered" >(</span>addressObj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      addressObj.postcode === postcode ? addressObj.active = true : addressObj.active = false;</span>
+    });
+  },
+  submitEvent (eventDetails) {
+    const activeDay = <span class="cstat-no" title="statement not covered" >this.getActiveDay();</span>
+<span class="cstat-no" title="statement not covered" >    activeDay.events.push({ "details": eventDetails, "edit": false });</span>
+  },
+  editEvent (dayId, eventDetails) {
+<span class="cstat-no" title="statement not covered" >    this.resetEditOfAllEvents();</span>
+    const eventObj = <span class="cstat-no" title="statement not covered" >this.getEventObj(dayId, eventDetails);</span>
+<span class="cstat-no" title="statement not covered" >    eventObj.edit = true;</span>
+  },
+  updateEvent (dayId, originalEventDetails, newEventDetails) {
+    const eventObj = <span class="cstat-no" title="statement not covered" >this.getEventObj(dayId, originalEventDetails);</span>
+<span class="cstat-no" title="statement not covered" >    eventObj.details = newEventDetails;</span>
+<span class="cstat-no" title="statement not covered" >    eventObj.edit = false;</span>
+  },
+  deleteEvent (dayId, eventDetails) {
+    const dayObj = <span class="cstat-no" title="statement not covered" >this.state.data.find(</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      day =&gt; </span>day.id === dayId</span>
+    );
+    const eventIndexToRemove = <span class="cstat-no" title="statement not covered" >dayObj.events.findIndex(</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      event =&gt; </span>event.details === eventDetails</span>
+    );
+<span class="cstat-no" title="statement not covered" >    dayObj.events.splice(eventIndexToRemove, 1);</span>
+  },
+  getEventObj (dayId, eventDetails) {
+    const dayObj = <span class="cstat-no" title="statement not covered" >this.state.data.find(</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      day =&gt; </span>day.id === dayId</span>
+    );
+<span class="cstat-no" title="statement not covered" >    return dayObj.events.find(</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      event =&gt; </span>event.details === eventDetails</span>
+    );
+  },
+  resetEditOfAllEvents () {
+<span class="cstat-no" title="statement not covered" >    this.state.data.map(<span class="fstat-no" title="function not covered" >(</span>dayObj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      dayObj.events.map(<span class="fstat-no" title="function not covered" >(</span>event) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        event.edit = false;</span>
+      });
+    });
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jun 06 2021 16:38:39 GMT+0100 (British Summer Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

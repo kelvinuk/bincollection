@@ -2,8 +2,9 @@
 
 > Bin Collection
 
+[Introduction]
 This is a demo Vue application. This application consumes the API from council to get the bin collection information and displays the relevant information and search results to users.
- 
+
 ## Build Setup
 
 ``` bash
